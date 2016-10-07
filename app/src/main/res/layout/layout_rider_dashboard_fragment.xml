@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_profile"
+            android:paddingTop="10dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvProfileWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textColor="#fff"
+                android:textSize="8.77pt" />
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#fff"
+                android:textSize="12.02pt"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/tvProfileWelcome" />
+
+            <TextView
+                android:id="@+id/tvProfileLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You logged in at"
+                android:textColor="#fff"
+                android:textSize="6pt"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tvProfileName" />
+
+            <ToggleButton
+                android:id="@+id/tbRiderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@drawable/style_toogle_selector"
+                android:padding="0dp"
+                android:layout_marginTop="-15dp"
+                android:checked="true"
+                android:textOff=""
+                android:textOn=""/>
+
+            <TextView
+                android:id="@+id/btnProfileLoginTime"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="10:00 \n AM"
+                android:textColor="#ffffff"
+                android:layout_marginTop="-15dp"
+                android:background="@drawable/bg_profile_item"
+                android:layout_below="@+id/tvProfileLogin"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvProfileDuty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location of duty"
+                android:textColor="#fff"
+                android:textSize="7.5pt"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/btnProfileLoginTime" />
+
+            <TextView
+                android:id="@+id/btnProfileDuty"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="Singapore"
+                android:textColor="#ffffff"
+                android:textSize="6pt"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_profile_item"
+                android:layout_below="@+id/tvProfileDuty"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvProfileOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orders"
+                android:textColor="#fff"
+                android:textSize="7.5pt"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_below="@+id/btnProfileDuty"
+                />
+
+            <TextView
+                android:id="@+id/btnProfileOrder"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="10 \nDelivered"
+                android:textColor="#ffffff"
+                android:textSize="6pt"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_profile_item"
+                android:layout_below="@+id/tvProfileOrder"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

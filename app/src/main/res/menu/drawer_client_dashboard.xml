@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_client_dashboard"
+            android:icon="@drawable/ic_account_settings"
+            android:title="@string/menu_title_dashboard"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_place_order"
+            android:icon="@drawable/ic_order"
+            android:title="@string/menu_title_place_order" />
+
+        <item
+            android:id="@+id/nav_rider_order_history"
+            android:icon="@drawable/ic_order_history"
+            android:title="@string/menu_title_order_history" />
+
+        <item
+            android:id="@+id/nav_outlets"
+            android:icon="@drawable/icon_menu_outlet"
+            android:title="@string/menu_title_outlets" />
+
+        <item
+            android:id="@+id/nav_client_signout"
+            android:icon="@drawable/ic_singout"
+            android:title="@string/menu_title_signout" />
+
+    </group>
+
+</menu>
